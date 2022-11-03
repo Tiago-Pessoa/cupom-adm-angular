@@ -1,0 +1,13 @@
+<mat-card class="campo-busca">
+  <mat-card-title  class="campo-titulo"> Cupons </mat-card-title>
+  <mat-card-content   class="campo-input">
+    <input matInput type="text" [(ngModel)]="value" value="{{value | uppercase}}"  placeholder="Digite aqui o nome do cupom que deseja encontrar...">
+  </mat-card-content>
+  <mat-card-actions   class="campo-botao">
+    <button color="primary" mat-raised-button class="btn-buscar" >BUSCAR</button>
+    <button color="warn" *ngIf="value"   mat-raised-button  class="btn-resetar" aria-label="Clear" (click)="value=''">RESETAR BUSCA</button>
+
+  </mat-card-actions>
+
+</mat-card>
+
